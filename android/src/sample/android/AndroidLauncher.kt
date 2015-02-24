@@ -7,7 +7,7 @@ import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration
 import sample.KotlinSample
 
 public class AndroidLauncher : AndroidApplication() {
-	override protected fun onCreate (savedInstanceState: Bundle): Unit {
+	override protected fun onCreate (savedInstanceState: Bundle?): Unit {
 		super.onCreate(savedInstanceState)
 		val config = AndroidApplicationConfiguration()
 		initialize(KotlinSample(), config)
